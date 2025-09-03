@@ -39,7 +39,6 @@ export async function POST(request: NextRequest) {
     if (!type) {
       console.error('Campo type ausente.');
       return NextResponse.json(
-        { error: 'Campo type ausente.' },
         { status: 400 }
       );
     }
