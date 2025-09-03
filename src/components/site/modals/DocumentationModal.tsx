@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { FileUp } from "lucide-react";
 
 export default function DocumentationModal({ triggerButton }: { triggerButton: ReactNode }) {
   const [name, setName] = useState("");

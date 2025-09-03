@@ -14,7 +14,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Lightbulb } from "lucide-react";
+
 
 export default function SuggestionModal({ triggerButton }: { triggerButton: ReactNode }) {
   const [name, setName] = useState("");
@@ -45,7 +45,7 @@ export default function SuggestionModal({ triggerButton }: { triggerButton: Reac
       } else {
         alert(result.message || "Falha ao enviar sugestão");
       }
-    } catch (error) {
+    } catch {
       alert("Erro ao conectar com o servidor");
     }
   };

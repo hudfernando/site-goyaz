@@ -1,6 +1,6 @@
 import { api } from '@/http/api';
 import { HTTPError } from 'ky';
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
   try {

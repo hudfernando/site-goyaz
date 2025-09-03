@@ -15,15 +15,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { MailOpen } from "lucide-react";
 
-// Define an interface for product rows
-interface ProductRow {
-    id: number;
-    nf: string;
-    codProduto: string;
-    lote: string;
-    validade: string;
-    quantidade: string;
-}
 
 export default function CorrectionLetterModal() {
     const [isOpen, setIsOpen] = useState(false);

@@ -6,7 +6,7 @@ import SalesChannelsSection from "@/components/site/SalesChannelsSection";
 import DistributorSection from "@/components/site/DistributorSection";
 import PartnersSection from "@/components/site/PartnersSection";
 import Footer from "@/components/site/Footer";
-import { Separator } from "@/components/ui/separator";
+
 
 export default function Home() {
   return (

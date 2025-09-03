@@ -4,11 +4,12 @@ import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { NavLink } from "./NavLink";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <header className="bg-gray-200 container mx-auto flex justify-between items-center py-4 px-4">
-      <a href="/" className="flex items-center space-x-3">
+      <Link href="/" className="flex items-center space-x-3">
         <Image
           src="/img/logo_site_goyaz.png"
           alt="Goyaz Service Logo"
@@ -17,7 +18,7 @@ export default function Header() {
           priority
           className="h-auto"
         />
-      </a>
+      </Link>
 
       <div className="hidden md:flex space-x-8 items-center">
         <NavLink href="#missao" label="Empresa" />
@@ -49,7 +50,7 @@ export default function Header() {
           <SheetContent side="right" className="bg-azul-escuro w-[280px] sm:w-[320px] p-0 text-white">
             <div className="flex flex-col h-full">
               <div className="p-6 border-b border-azul-claro/20">
-                <a href="/">
+                <Link href="/">
                   <Image
                     src="/img/logo_site_goyaz.png"
                     alt="Goyaz Service Logo"
@@ -57,7 +58,7 @@ export default function Header() {
                     height={40}
                     className="h-auto"
                   />
-                </a>
+                </Link>
               </div>
               <nav className="flex-grow p-6 space-y-3">
                 <NavLink href="#missao" label="Empresa" isMobile />

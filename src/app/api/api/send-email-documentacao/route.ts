@@ -2,6 +2,22 @@ import { api } from '@/http/api';
 import { HTTPError } from 'ky';
 import { NextRequest, NextResponse } from "next/server";
 
+interface DocumentationData {
+  Type: string;
+  Name: string;
+  Email: string;
+  Phone: string;
+  Document1Base64?: string;
+  Document1FileName?: string;
+  Document1ContentType?: string;
+  Document2Base64?: string;
+  Document2FileName?: string;
+  Document2ContentType?: string;
+  Document3Base64?: string;
+  Document3FileName?: string;
+  Document3ContentType?: string;
+}
+
 export async function POST(request: NextRequest) {
   try {
     const formData = await request.formData();
@@ -50,7 +66,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Preparar o objeto JSON para enviar ao backend
-    const jsonData: any = {
+    const jsonData: DocumentationData = {
       Type: type,
       Name: name,
       Email: email,

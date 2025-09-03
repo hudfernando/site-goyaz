@@ -1,7 +1,7 @@
 // src/components/site/SalesChannelCard.tsx
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import NewClientModal from "./modals/NewClientModal";
+
 
 interface SalesChannelCardProps {
   icon: string;
