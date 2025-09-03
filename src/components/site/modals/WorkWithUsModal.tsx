@@ -42,7 +42,7 @@ export default function WorkWithUsModal({ triggerButton }: { triggerButton: Reac
       } else {
         alert(result.message || "Falha ao enviar candidatura");
       }
-    } catch (error) {
+    } catch {
       alert("Erro ao conectar com o servidor");
     }
   };
